@@ -1,5 +1,14 @@
-<title>Festivals 17'</title>
-<link rel="stylesheet" type="text/css" href="/css/style.css">
+<!DOCTYPE html>
+
+<head>
+  <title>Festivals 17'</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
 <h1>Music Festivals 2017 ❤️</h1>
 
-<% include ../partials/header %>
+<% pages.forEach(function (page) { %>
+  <a href="<%= page.url %>"><%= page.name %></a>
+<% }) %>
+
+</html>
